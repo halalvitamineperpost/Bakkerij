@@ -75,6 +75,17 @@ namespace Bakkerij
                             foundtaart.display();
                             break;
 
+                        case Showkeuze.VeranderTaart:
+                            Console.WriteLine("Geef te wijzigen taart op:");
+                            var wijzigingTaart = Console.ReadLine();
+
+                            Taart changetaart = producten.Find(taart => taart.Productnaam == wijzigingTaart);   
+                            changetaart.display();
+
+                            Taart wijzigen = new Taart();
+                            wijzigen.verander();
+                            break;
+
                         default:
                             break;
                     }
