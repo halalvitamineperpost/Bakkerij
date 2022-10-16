@@ -9,5 +9,5 @@ namespace Bakkerij.Enum
     {
             [Description("Consument")] Consument,
             [Description("Zakelijk")] Zakelijk
-        }
+    }
 }
