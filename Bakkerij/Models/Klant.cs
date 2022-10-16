@@ -27,10 +27,12 @@ namespace Bakkerij.Models
                     break;
                 case Enum.TypeKlant.Zakelijk:
                     Console.WriteLine("Zakelijk geselecteerd:");
-                    break;               
+                    break;                                          
                 default:
 
-                    break;
+                    break;              
+                   
+                  
             }
 
             //string description = Enumerations.GetEnumDescription((FunctieOmschrijving)keuzefunctie);
@@ -59,7 +61,7 @@ namespace Bakkerij.Models
             {
                 var klant = new Klant();
 
-                klanten.Add(klant);
+                klanten.Add(klant);                
 
                 Console.WriteLine("wil je doorgaan om een klant op te voeren j/n?");
 
