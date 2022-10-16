@@ -57,7 +57,7 @@ namespace Bakkerij
                             taarttoevoegen = false;
                         }
                     }
-                    Console.WriteLine("Maak keuze om taarten te zien\n 0 voor alle taarten\n 1. voor bepaalde taart");
+                    Console.WriteLine("Maak keuze om taarten te zien\n 0 voor alle taarten\n 1. voor bepaalde taart \n 2.Wijzig Taart");
                     Showkeuze laatzien = (Showkeuze)int.Parse(Console.ReadLine());
                     switch (laatzien)
                     {
