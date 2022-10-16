@@ -57,7 +57,7 @@ namespace Bakkerij
                             taarttoevoegen = false;
                         }
                     }
-                    Console.WriteLine("Maak keuze om taarten te zien\n 0 voor alle taarten\n 1. voor bepaalde taart");
+                    Console.WriteLine("Maak keuze om taarten te zien\n 0 voor alle taarten\n 1. voor bepaalde taart \n 2.Wijzig Taart");
                     Showkeuze laatzien = (Showkeuze)int.Parse(Console.ReadLine());
                     switch (laatzien)
                     {
@@ -73,6 +73,17 @@ namespace Bakkerij
 
                             Taart foundtaart = producten.Find(taart => taart.Productnaam == naamProduct);
                             foundtaart.display();
+                            break;
+
+                        case Showkeuze.VeranderTaart:
+                            Console.WriteLine("Geef te wijzigen taart op:");
+                            var wijzigingTaart = Console.ReadLine();
+
+                            Taart changetaart = producten.Find(taart => taart.Productnaam == wijzigingTaart);   
+                            changetaart.display();
+
+                            Taart wijzigen = new Taart();
+                            wijzigen.verander();
                             break;
 
                         default:

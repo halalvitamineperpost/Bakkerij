@@ -15,8 +15,13 @@ namespace Bakkerij
         {
             Console.WriteLine("Geef smaak van de taart op:");
             Smaak = Console.ReadLine();
+            
+        }
+        public void verander()
+        {
             Console.WriteLine("geef aub aktuele prijs op:");
             Prijs = double.Parse(Console.ReadLine());
+            display();
         }
         public void display()
         {

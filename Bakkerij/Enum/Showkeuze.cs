@@ -7,6 +7,7 @@ namespace Bakkerij.Enum
     enum Showkeuze
     {
         LaatAllesZien,
-        ZoekeenTaart
+        ZoekeenTaart,
+        VeranderTaart
     }
 }
